@@ -5,7 +5,7 @@ $dbname = getenv("MYSQL_DATABASE");
 $dbuser = getenv("MYSQL_USER");
 $dbpassword = getenv("MYSQL_PASSWORD");
 
-$connection mysql_connect($dbhost . ":" . $dbport, $dbuser, $dbpassword);
+$connection = mysql_connect($dbhost . ":" . $dbport, $dbuser, $dbpassword);
 
 if (!$connection) {
 	echo "Failed to connect to the database";

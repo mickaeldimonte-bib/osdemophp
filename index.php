@@ -1,4 +1,4 @@
-Hello M&T newbies
+Hello M&T newbies<br><br>
 
-That is my awesome app.
-Try with /oddemo.php as a URI ... I am pretty sure that you will be amazed :D
+That is my awesome app.<br>
+Try with /osdemo.php as a URI ... I am pretty sure that you will be amazed :D
