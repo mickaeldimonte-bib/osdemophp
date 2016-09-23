@@ -15,7 +15,7 @@ if (!$connection) {
 	echo "dbuser = ".$dbuser;
 	echo "dbpassword = ".$dbpassword;
 } else {
-	echo "Successfully connected to the database '" . $dbname . "'.<br>"
+	echo "Successfully connected to the database '" . $dbname . "'.<br>";
 }
 
 $dbconnection = mysql_select_db($dbname);
