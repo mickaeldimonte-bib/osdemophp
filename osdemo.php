@@ -6,6 +6,10 @@ $dbname = getenv("MYSQL_DATABASE");
 $dbuser = getenv("MYSQL_USER");
 $dbpassword = getenv("MYSQL_PASSWORD");
 
+$host= gethostname();
+$ip = gethostbyname($host);
+echo "Just hit '" . $host . "' (" . $ip . ")<br><br>";
+
 $connection = mysqli_connect($dbhost . ":" . $dbport, $dbuser, $dbpassword, $dbname);
 
 if (!$connection) {
