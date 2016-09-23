@@ -24,7 +24,7 @@ if (!$connection) {
 		echo "id.: " . $row['user_id'] . " / name: " . $row['username'] . "<br>";
 	}
 
-	mysqli_close();
+	mysqli_close($connection);
 }
 
 ?>
