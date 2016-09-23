@@ -8,7 +8,7 @@ $dbpassword = getenv("MYSQL_PASSWORD");
 
 $host= gethostname();
 $ip = gethostbyname($host);
-echo "Just hit '" . $host . "' (" . $ip . ")<br><br>";
+echo "Just hit container '" . $host . "' (" . $ip . ")<br><br>";
 
 $connection = mysqli_connect($dbhost . ":" . $dbport, $dbuser, $dbpassword, $dbname);
 
