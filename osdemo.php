@@ -8,7 +8,7 @@ $dbpassword = getenv("DATABASE_PASSWORD");
 
 $host= gethostname();
 $ip = gethostbyname($host);
-echo "<h2>Just hit container '" . $host . "' (" . $ip . ")</h2><br><br>";
+echo "Just hit container '" . $host . "' (" . $ip . ")<br><br>";
 
 $connection = mysqli_connect($dbhost . ":" . $dbport, $dbuser, $dbpassword, $dbname);
 
@@ -20,12 +20,12 @@ if (!$connection) {
 	echo "dbuser = " . $dbuser . "<br>";
 	echo "dbpassword = " . $dbpassword . "<br>";
 } else {
-	echo "<h2>Successfully connected to the database '" . $dbname . "'.</h2><br>";
-	echo "<h2>Funny, how things can sometimes go as planned :)</h2><br><br>";
+	echo "Successfully connected to the database '" . $dbname . "'.<br>";
+	echo "Funny, how things can sometimes go as planned :)<br><br>";
 
 	$rs = $connection->query("SELECT * FROM users");
 	while ($row = mysqli_fetch_assoc($rs)) {
-		echo "<b>id.: </b>" . $row['user_id'] . " / <b>name: </b>" . $row['username'] . "<br>";
+		echo "id.: " . $row['user_id'] . " / name: " . $row['username'] . "<br>";
 	}
 
 	mysqli_close($connection);
