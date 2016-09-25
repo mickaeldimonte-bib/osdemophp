@@ -1,10 +1,10 @@
 <?php
 
-$dbhost = getenv("DB_SERVICE_HOST");
-$dbport = getenv("DB_SERVICE_PORT");
-$dbname = getenv("MYSQL_DATABASE");
-$dbuser = getenv("MYSQL_USER");
-$dbpassword = getenv("MYSQL_PASSWORD");
+$dbhost = getenv("MTDEVDB_SERVICE_HOST");
+$dbport = getenv("MTDEVDB_SERVICE_PORT");
+$dbname = getenv("DATABASE_NAME");
+$dbuser = getenv("DATABASE_USER");
+$dbpassword = getenv("DATABASE_PASSWORD");
 
 $host= gethostname();
 $ip = gethostbyname($host);
