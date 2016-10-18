@@ -2,8 +2,8 @@
 
 $dbhost = getenv("MYSQL_ADDON_HOST");
 $dbport = getenv("MYSQL_ADDON_PORT");
-$dbname = getenv("MYSQL_ADDON_DATABASE");
-$dbuser = getenv("MYSQL_ADDON_USERNAME");
+$dbname = getenv("MYSQL_ADDON_DB");
+$dbuser = getenv("MYSQL_ADDON_USER");
 $dbpassword = getenv("MYSQL_ADDON_PASSWORD");
 
 $host= gethostname();
