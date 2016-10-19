@@ -22,7 +22,7 @@ if (!$connection) {
 } else {
 	echo "Successfully connected to the database '" . $dbname . "'.<br>";
 	echo "Funny, how things can sometimes go as planned :)<br><br>";
-	echo "<h3>Here is version 4</h3><br><br>";
+	echo "<h3>Here is version 5</h3><br>";
 
 	$rs = $connection->query("SELECT * FROM users");
 	while ($row = mysqli_fetch_assoc($rs)) {
